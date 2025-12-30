@@ -66,7 +66,7 @@ const HeroSection = () => {
             size="lg"
             className="bg-[#0A66C2] text-foreground hover:bg-[#0A66C2]/90 transition-all duration-300"
           >
-            <a href="https://www.linkedin.com/in/larry-jack-gomez-casalins-1a34b837b" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/larry-gomez-30b2a557" target="_blank" rel="noopener noreferrer">
               <Linkedin className="mr-2 h-5 w-5" />
               LinkedIn
             </a>

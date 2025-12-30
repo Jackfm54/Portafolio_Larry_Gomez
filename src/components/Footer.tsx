@@ -21,7 +21,7 @@ const Footer = () => {
             <span className="hidden sm:inline">GitHub</span>
           </a>
           <a
-            href="https://www.linkedin.com/in/larry-jack-gomez-casalins-1a34b837b"
+            href="https://www.linkedin.com/in/larry-gomez-30b2a557"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
