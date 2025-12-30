@@ -1,4 +1,4 @@
-import { Github, Mail, ChevronDown } from "lucide-react";
+import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
@@ -26,7 +26,7 @@ const HeroSection = () => {
           <div className="relative inline-block">
             <img
               src="https://avatars.githubusercontent.com/u/171693139?v=4"
-              alt="Jackfm54"
+              alt="Larry Jack Gomez Casalins"
               className="w-32 h-32 rounded-full border-4 border-primary/30 glow"
             />
             <div className="absolute -bottom-2 -right-2 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-xs animate-pulse-glow">
@@ -36,8 +36,8 @@ const HeroSection = () => {
         </div>
 
         {/* Name & Title */}
-        <h1 className="text-5xl md:text-7xl font-bold mb-4 opacity-0 animate-fade-in" style={{ animationDelay: '200ms' }}>
-          <span className="gradient-text">Jackfm54</span>
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 opacity-0 animate-fade-in" style={{ animationDelay: '200ms' }}>
+          <span className="gradient-text">Larry Jack Gomez Casalins</span>
         </h1>
 
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '400ms' }}>
@@ -45,8 +45,8 @@ const HeroSection = () => {
         </p>
 
         <p className="text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed opacity-0 animate-fade-in" style={{ animationDelay: '600ms' }}>
-          Je crée des applications innovantes avec Flutter, TypeScript, JavaScript et C#. 
-          Spécialisé dans le développement mobile et les solutions basées sur l'intelligence artificielle.
+          Je crée des applications innovantes avec Flutter, TypeScript, Python et C#. 
+          Spécialisé dans le développement mobile, le Machine Learning et les solutions basées sur l'intelligence artificielle.
         </p>
 
         {/* CTA Buttons */}
@@ -58,7 +58,17 @@ const HeroSection = () => {
           >
             <a href="https://github.com/Jackfm54" target="_blank" rel="noopener noreferrer">
               <Github className="mr-2 h-5 w-5" />
-              Voir GitHub
+              GitHub
+            </a>
+          </Button>
+          <Button
+            asChild
+            size="lg"
+            className="bg-[#0A66C2] text-foreground hover:bg-[#0A66C2]/90 transition-all duration-300"
+          >
+            <a href="https://www.linkedin.com/in/larry-jack-gomez-casalins-1a34b837b" target="_blank" rel="noopener noreferrer">
+              <Linkedin className="mr-2 h-5 w-5" />
+              LinkedIn
             </a>
           </Button>
           <Button

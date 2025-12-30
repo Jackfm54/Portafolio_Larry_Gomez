@@ -1,4 +1,4 @@
-import { Code, GitBranch, Users, Calendar } from "lucide-react";
+import { Code, GitBranch, Users, Briefcase } from "lucide-react";
 
 const stats = [
   {
@@ -17,9 +17,9 @@ const stats = [
     label: "Followers",
   },
   {
-    icon: Calendar,
-    value: "2024",
-    label: "Membre depuis",
+    icon: Briefcase,
+    value: "5+",
+    label: "Technologies",
   },
 ];
 
