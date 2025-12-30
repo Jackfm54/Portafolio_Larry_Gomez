@@ -5,17 +5,19 @@ const skills = [
   "Dart",
   "TypeScript",
   "JavaScript",
-  "C#",
   "Python",
+  "C#",
+  "Machine Learning",
+  "YOLO",
   "Firebase",
   "React",
   "Node.js",
-  "Machine Learning",
   "Jupyter",
   "Git",
   "REST APIs",
   "Mobile Development",
   "Backend Development",
+  "Computer Vision",
 ];
 
 const SkillsSection = () => {

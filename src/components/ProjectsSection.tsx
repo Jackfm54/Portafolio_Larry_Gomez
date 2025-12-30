@@ -2,18 +2,46 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
-    name: "TTpia2",
-    description: "LaboIA2 - Projet d'intelligence artificielle avec Jupyter Notebook pour l'analyse et le traitement de données.",
-    language: "Jupyter Notebook",
-    languageColor: "#DA5B0B",
-    url: "https://github.com/Jackfm54/TTpia2",
+    name: "LaboGrocery",
+    description: "Plataforma de supermarché - Solution complète de gestion de supermarché développée en C#.",
+    language: "C#",
+    languageColor: "#178600",
+    url: "https://github.com/Jackfm54/LaboGrocery",
   },
   {
-    name: "driver_taxi",
-    description: "Application de taxi développée avec Flutter et Firebase pour une expérience utilisateur fluide et temps réel.",
-    language: "Dart",
-    languageColor: "#00B4AB",
-    url: "https://github.com/Jackfm54/driver_taxi",
+    name: "yolo-vision-web",
+    description: "Plateforme de détection d'objets basée sur YOLO avec interface web Python.",
+    language: "Python",
+    languageColor: "#3572A5",
+    url: "https://github.com/Jackfm54/yolo-vision-web",
+  },
+  {
+    name: "food-production-prediction-jj",
+    description: "Système de prédiction de production alimentaire utilisant le Machine Learning avec Python.",
+    language: "Python",
+    languageColor: "#3572A5",
+    url: "https://github.com/Jackfm54/food-production-prediction-jj",
+  },
+  {
+    name: "food-production-prediction-ea",
+    description: "Analyse prédictive de la production alimentaire avec TypeScript et algorithmes avancés.",
+    language: "TypeScript",
+    languageColor: "#3178C6",
+    url: "https://github.com/Jackfm54/food-production-prediction-ea",
+  },
+  {
+    name: "Clinical-backend-ia",
+    description: "Backend intelligent pour application clinique avec fonctionnalités d'IA pour l'aide au diagnostic.",
+    language: "JavaScript",
+    languageColor: "#F7DF1E",
+    url: "https://github.com/Jackfm54/Clinical-backend-ia",
+  },
+  {
+    name: "app-mobile",
+    description: "Application mobile moderne développée en TypeScript avec architecture scalable.",
+    language: "TypeScript",
+    languageColor: "#3178C6",
+    url: "https://github.com/Jackfm54/app-mobile",
   },
   {
     name: "clinical",
@@ -24,25 +52,18 @@ const projects = [
     forks: 1,
   },
   {
-    name: "Clinical-backend-ia",
-    description: "Backend intelligent pour l'application clinique, intégrant des fonctionnalités d'IA pour l'aide au diagnostic.",
-    language: "JavaScript",
-    languageColor: "#F7DF1E",
-    url: "https://github.com/Jackfm54/Clinical-backend-ia",
+    name: "driver_taxi",
+    description: "Application de taxi développée avec Flutter et Firebase pour une expérience temps réel.",
+    language: "Dart",
+    languageColor: "#00B4AB",
+    url: "https://github.com/Jackfm54/driver_taxi",
   },
   {
-    name: "app-mobile",
-    description: "Application mobile développée en TypeScript avec une architecture moderne et maintenable.",
-    language: "TypeScript",
-    languageColor: "#3178C6",
-    url: "https://github.com/Jackfm54/app-mobile",
-  },
-  {
-    name: "LaboGrocery",
-    description: "Plateforme de supermarché développée en C# pour une gestion efficace des stocks et des ventes.",
-    language: "C#",
-    languageColor: "#178600",
-    url: "https://github.com/Jackfm54/LaboGrocery",
+    name: "TTpia2",
+    description: "LaboIA2 - Projet d'intelligence artificielle avec Jupyter Notebook pour l'analyse de données.",
+    language: "Jupyter Notebook",
+    languageColor: "#DA5B0B",
+    url: "https://github.com/Jackfm54/TTpia2",
   },
 ];
 
@@ -55,7 +76,7 @@ const ProjectsSection = () => {
             <span className="gradient-text">Mes Projets</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Une sélection de mes projets open-source, du développement mobile aux solutions d'intelligence artificielle.
+            Une sélection de mes projets open-source, du développement mobile aux solutions d'intelligence artificielle et Machine Learning.
           </p>
         </div>
 
