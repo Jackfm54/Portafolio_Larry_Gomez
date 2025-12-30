@@ -24,7 +24,7 @@ const Footer = () => {
 
             {/* Right side - Contact button */}
             <a
-              href="mailto:larry.gomez@example.com"
+              href="mailto:jack.fm.54@hotmail.com"
               className="btn-gradient px-8 py-4 rounded-xl text-primary-foreground font-semibold flex items-center gap-2 hover:scale-105 transition-transform shadow-lg shadow-primary/25"
             >
               <Mail className="w-5 h-5" />
