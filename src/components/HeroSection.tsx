@@ -1,6 +1,6 @@
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import profilePhoto from "@/assets/profile-photo.jpeg";
+import profilePhoto from "@/assets/profile-photo.png";
 
 const HeroSection = () => {
   return (
@@ -22,15 +22,15 @@ const HeroSection = () => {
       />
 
       <div className="relative z-10 text-center max-w-4xl mx-auto">
-        {/* Avatar */}
+        {/* Profile Photo */}
         <div className="mb-8 opacity-0 animate-scale-in">
           <div className="relative inline-block">
             <img
               src={profilePhoto}
               alt="Larry Jack Gomez Casalins"
-              className="w-32 h-32 rounded-full border-4 border-primary/30 glow object-cover"
+              className="w-48 md:w-64 rounded-2xl border-4 border-primary/30 glow shadow-2xl"
             />
-            <div className="absolute -bottom-2 -right-2 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-xs animate-pulse-glow">
+            <div className="absolute -bottom-3 -right-3 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm animate-pulse-glow">
               AI
             </div>
           </div>
