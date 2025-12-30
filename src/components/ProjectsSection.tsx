@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard";
+import { Sparkles } from "lucide-react";
 
 const projects = [
   {
@@ -69,13 +70,23 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-24 px-4">
-      <div className="max-w-6xl mx-auto">
+    <section id="projects" className="py-28 px-4 relative">
+      {/* Decorative elements */}
+      <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-[100px]" />
+      <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/10 rounded-full blur-[120px]" />
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">
+          {/* Section badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-sm font-medium mb-6 opacity-0 animate-fade-in">
+            <Sparkles className="w-4 h-4 text-primary" />
+            <span className="text-muted-foreground">Portfolio</span>
+          </div>
+          
+          <h2 className="text-4xl md:text-6xl font-display font-bold mb-6 opacity-0 animate-fade-in" style={{ animationDelay: '100ms' }}>
             <span className="gradient-text">Mes Projets</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground max-w-2xl mx-auto text-lg opacity-0 animate-fade-in" style={{ animationDelay: '200ms' }}>
             Une sélection de mes projets open-source, du développement mobile aux solutions d'intelligence artificielle et Machine Learning.
           </p>
         </div>
@@ -85,7 +96,7 @@ const ProjectsSection = () => {
             <ProjectCard
               key={project.name}
               {...project}
-              delay={index * 100}
+              delay={300 + index * 80}
             />
           ))}
         </div>
