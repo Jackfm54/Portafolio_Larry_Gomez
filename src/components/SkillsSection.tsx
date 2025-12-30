@@ -1,3 +1,5 @@
+import { Wrench } from "lucide-react";
+
 interface TechLogoProps {
   name: string;
   logo: string;
@@ -7,15 +9,19 @@ interface TechLogoProps {
 const TechLogo = ({ name, logo, delay = 0 }: TechLogoProps) => {
   return (
     <div
-      className="flex flex-col items-center gap-3 p-4 glass-card rounded-xl hover:border-primary/50 hover-glow transition-all duration-300 opacity-0 animate-fade-in group"
+      className="group flex flex-col items-center gap-3 p-5 glass-card-hover rounded-2xl opacity-0 animate-fade-in cursor-default"
       style={{ animationDelay: `${delay}ms` }}
     >
-      <img 
-        src={logo} 
-        alt={name} 
-        className="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300"
-      />
-      <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+      <div className="relative">
+        {/* Glow effect on hover */}
+        <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        <img 
+          src={logo} 
+          alt={name} 
+          className="w-14 h-14 object-contain relative z-10 group-hover:scale-110 transition-transform duration-300 drop-shadow-lg"
+        />
+      </div>
+      <span className="text-sm font-medium text-muted-foreground group-hover:text-foreground transition-colors">
         {name}
       </span>
     </div>
@@ -87,17 +93,26 @@ const technologies = [
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="py-24 px-4 relative">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
+    <section id="skills" className="py-28 px-4 relative overflow-hidden">
+      {/* Background effects */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-b from-secondary/50 via-transparent to-secondary/50" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[150px]" />
+      </div>
       
       <div className="max-w-5xl mx-auto relative z-10">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-16">
+          {/* Section badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-sm font-medium mb-6 opacity-0 animate-fade-in">
+            <Wrench className="w-4 h-4 text-primary" />
+            <span className="text-muted-foreground">Stack Technique</span>
+          </div>
+          
+          <h2 className="text-4xl md:text-6xl font-display font-bold mb-6 opacity-0 animate-fade-in" style={{ animationDelay: '100ms' }}>
             <span className="gradient-text">Technologies</span>
           </h2>
-          <p className="text-muted-foreground">
-            Les outils et langages que j'utilise au quotidien
+          <p className="text-muted-foreground text-lg opacity-0 animate-fade-in" style={{ animationDelay: '200ms' }}>
+            Les outils et langages que je maîtrise au quotidien
           </p>
         </div>
 
@@ -107,7 +122,7 @@ const SkillsSection = () => {
               key={tech.name} 
               name={tech.name} 
               logo={tech.logo} 
-              delay={index * 50} 
+              delay={300 + index * 40} 
             />
           ))}
         </div>
